@@ -10,8 +10,8 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     path('/', index),
-    url('/health', health),
-    url('/admin', include(admin.site.urls)),
+    path('/health', health),
+    path('/admin', include(admin.site.urls)),
 ]
 
 if settings.DEBUG:
